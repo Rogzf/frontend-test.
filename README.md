@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+Lista de Usuarios con Desplazamiento Infinito
+Este proyecto consiste en una aplicación web que muestra una lista de usuarios de manera dinámica, utilizando desplazamiento infinito para cargar más usuarios a medida que el usuario se desplaza hacia abajo en la página.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Componentes
+CardUsers
+El componente CardUsers es una tarjeta que muestra la información de un usuario, incluyendo su nombre, correo electrónico y teléfono. Utiliza props para recibir los datos del usuario y renderizarlos en la interfaz de usuario.
 
-## Available Scripts
+InfiniteScrollUser
+El componente InfiniteScrollUser implementa el desplazamiento infinito para cargar más usuarios a medida que el usuario se desplaza hacia abajo en la página. Utiliza el componente CardUsers para renderizar cada usuario en la lista.
 
-In the project directory, you can run:
+App
+El componente App es el componente principal de la aplicación. Aquí se presenta el título de la lista de usuarios y se incluye el componente InfiniteScrollUser para mostrar la lista de usuarios con desplazamiento infinito.
 
-### `npm start`
+Tecnologías Utilizadas
+React: Utilizado como la biblioteca principal para la creación de interfaces de usuario interactivas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+react-infinite-scroll-component: Una biblioteca de React utilizada para implementar la funcionalidad de desplazamiento infinito.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+fetch API: Utilizada para realizar solicitudes HTTP asíncronas para obtener datos de la API de usuarios aleatorios.
 
-### `npm test`
+Configuración y Uso
+Clona el repositorio en tu máquina local.
+Instala las dependencias utilizando npm.
+Inicia la API de usuarios aleatorios ejecutando el siguiente comando en una terminal:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
+Esto iniciará la aplicación y se abrirá en tu navegador predeterminado.
+Ahora podrás ver la lista de usuarios con desplazamiento infinito.
+7
+Personalización
+Si deseas personalizar la aplicación o integrarla en otro proyecto, puedes modificar los estilos CSS en línea dentro de los componentes o crear tus propios componentes de React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Disfruta explorando la lista de usuarios con desplazamiento infinito!

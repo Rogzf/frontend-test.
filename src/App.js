@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from 'react';
+// import UserListApi from "./components/UserListApi"
+import InfiniteScrollUser from './components/InfiniteScrollUser';
+// import InfiniteScroll from 'react-infinite-scroll-component';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col items-center pt-8 bg-slate-400">
+      <h1 className='text-black font-medium p-3'>Lista de Usuarios</h1>
+      <InfiniteScrollUser/>
+{/* <UserListApi/> */}
     </div>
   );
 }
