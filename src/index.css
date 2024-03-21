@@ -3,14 +3,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.card-info {
-    flex-grow: 1;
-    overflow: hidden;
-  }
-  
-  .card-info p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
