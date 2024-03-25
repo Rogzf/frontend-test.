@@ -34,7 +34,7 @@ const InfiniteScrollUser = () => {
 
   return (
     <div className='flex flex-col items-center p-2'>
-      <input className="rounded-md border border-black p-2 w-full md:w-[50%]" type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Buscar usuarios..." />
+      <input className="rounded-md border border-black p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Buscar usuarios..." />
       <div className='flex flex-wrap justify-center items-center gap-5 p-4 w-full'>
         {filteredUsers.map((user, index) => (
           <CardUsers key={user.id} user={user}/>
